@@ -43,9 +43,17 @@ h1 {
 
 #menu {
     font-family: lato, sans-serif;
-    font-size: 1rem;
+    font-size: 110%;
     font-weight: 80;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 ul {

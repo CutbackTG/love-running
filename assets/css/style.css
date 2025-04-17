@@ -61,7 +61,7 @@ h1 {
 
 /* Navbar styles with dropdown toggle */
 nav {
-  position:absolute;
+  position: absolute;
   background-color: #ffffff;
   width: 100%;
   left: 0;
@@ -72,7 +72,7 @@ nav {
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -83,7 +83,6 @@ nav {
 .nav-toggle-label {
   font-size: 2rem;
 }
-
 
 ul {
   list-style: none;
@@ -98,49 +97,59 @@ main {
 }
 
 /* Footer */
-footer {
-  background-color: orange;
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-   /* Header */
-   nav {
+  /* Header */
+  nav {
     display: block;
     position: relative;
     box-shadow: none;
     width: fit-content;
     padding-right: 1rem;
-   }
+  }
 
-   #menu {
-    display:flex;
-   }
+  #menu {
+    display: flex;
+  }
 
-   #menu > li {
+  #menu > li {
     padding-left: 1rem;
-   }
+  }
 
-   .nav-toggle-label {
+  .nav-toggle-label {
     display: none;
-   }
+  }
 
-   #logo {
+  #logo {
     font-size: 280%;
     line-height: 75px;
     margin: 0 0.5rem;
-   }
+  }
 
-   /* Main content */
-   main {
+  /* Main content */
+  main {
     /* Push main content down to accomodate larger header */
     margin-top: 79px;
-   }
+  }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width:992px) {
-  #menu a:hover{
+@media screen and (min-width: 992px) {
+  #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
 }
